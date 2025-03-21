@@ -201,8 +201,11 @@ namespace crud_pabd4
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-
+            LoadData();
+            MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\nJumlah Baris: {dgvMahasiswa.RowCount}",
+                "Bentar loadingg DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+    
 
         private void dgvMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
