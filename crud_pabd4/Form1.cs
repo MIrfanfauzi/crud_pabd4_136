@@ -27,6 +27,16 @@ namespace crud_pabd4
             LoadData();
         }
 
+        // Fungsi untuk mengosongkan semua input pada TextBox
+        private void ClearForm()
+        {
+            txtNIM.Clear();
+            txtNama.Clear();
+            txtEmail.Clear();
+            txtTelepon.Clear();
+            txtAlamat.Clear();
+            txtNIM.Focus();  // Fokus kembali ke NIM agar user siap memasukkan data baru
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
