@@ -21,6 +21,13 @@ namespace crud_pabd4
             InitializeComponent();
         }
 
+        // Event saat form pertama kali dimuat
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
